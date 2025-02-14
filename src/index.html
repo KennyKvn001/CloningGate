@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="w-full relative">
+  <body class="w-full relative overflow-x-hidden">
     <!-- Header -->
     <div class="flex flex-col relative">
       <div class="w-full h-1 bg-[#AE9142]"></div>
@@ -29,17 +29,17 @@
           <li><a href="#" class="bg-white h-7 w-[0.5px] px-[0.2px]"></a></li>
           <li>
             <a href="#" class="text-white flex gap-1"
-              >Give <img src="assets/SVG.svg" alt="icon"
+              >Give <img src="assets/svg.svg" alt="icon"
             /></a>
           </li>
           <li>
             <a href="#" class="text-white flex gap-1"
-              >Alumni <img src="assets/SVG.svg" alt="icon"
+              >Alumni <img src="assets/svg.svg" alt="icon"
             /></a>
           </li>
           <li>
             <a href="#" class="text-white flex gap-1"
-              >Athletic <img src="assets/SVG.svg" alt="icon"
+              >Athletic <img src="assets/svg.svg" alt="icon"
             /></a>
           </li>
         </ul>
@@ -50,7 +50,28 @@
     <div
       class="bg-white p-6 lg:w-[55%] lg:flex lg:justify-self-end w-full lg:relative lg:z-10 lg:top-[-40px] lg:right-20"
     >
-      <ul class="flex gap-10">
+      <div class="flex lg:hidden justify-evenly">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-house-chimney text-[#0C2340]"></i>
+          <p class="font-light text-[#0C2340]">Home</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fa-regular fa-envelope text-[#0C2340]"></i>
+          <p class="font-light text-[#0C2340]">Contact</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-magnifying-glass text-[#0C2340]"></i>
+          <p class="font-light text-[#0C2340]">Search</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="flex flex-col gap-2">
+            <div class="w-10 h-[3px] bg-[#0C2340]"></div>
+            <div class="w-10 h-[3px] bg-[#0C2340]"></div>
+          </div>
+          <p class="font-light text-[#0C2340]">Menu</p>
+        </div>
+      </div>
+      <ul class="lg:flex hidden gap-10">
         <li><a href="#" class="text-lg text-gray-600">Academics</a></li>
         <li><a href="#" class="text-lg text-gray-600">Admission</a></li>
         <li><a href="#" class="text-lg text-gray-600">Research</a></li>
@@ -64,12 +85,12 @@
     </div>
     <!-- hero Section -->
     <div
-      class="w-full relative lg:top-[-80px] bg-gradient-to-l from-[#02326d] to-[#02326c] grayscale-50"
+      class="w-full relative lg:top-[-80px] bg-gradient-to-l from-[#02326d] to-[#02326c] grayscale-50 h-dvh"
     >
       <img
         src="assets/campus_spring_scenic-1920.webp.png"
         alt="img"
-        class="object-cover h-full bg-cover w-full"
+        class="object-cover h-full bg-cover w-full mix-blend-overlay"
       />
       <!-- hero content -->
       <div
@@ -78,9 +99,11 @@
         <img
           src="assets/Heading 1.svg"
           alt="Heading"
-          class="w-[200px] lg:w-[300px] lg:flex lg:self-end"
+          class="w-[200px] lg:w-[300px] lg:flex lg:self-end self-center"
         />
-        <p class="text-white text-center align-middle lg:text-end lg:text-2xl">
+        <p
+          class="text-white text-center align-middle lg:text-end lg:text-2xl px-5 text-lg"
+        >
           Notre Dame attracts people willing to take action to find solutions to
           humanity's most pressing challenges. "What would you fight for?" For
           us, it's not a question. It's a call to action. We are the Fighting
@@ -88,7 +111,7 @@
         </p>
         <a
           href="#"
-          class="p-5 rounded-xl bg-white flex items-center gap-2 w-fit lg:self-end text-xl text-[#0C2340]"
+          class="p-5 rounded-xl bg-white flex items-center gap-2 w-fit lg:self-end text-xl text-[#0C2340] self-center"
           >What would you fight for? <img src="assets/linkout.svg" alt="icon"
         /></a>
       </div>
@@ -97,40 +120,48 @@
     <div
       class="flex flex-col lg:flex-row lg:gap-10 lg:items-center relative mb-20"
     >
-      <div class="flex flex-col gap-5 lg:w-[1000px]">
+      <div class="flex flex-col gap-5 lg:gap-0 lg:w-[600px]">
         <img
           src="https://news.nd.edu/assets/604955/800x/globering_2025.jpg"
           alt="img"
-          class="w-full"
+          class="w-full p-5 lg:p-0"
         />
-        <div class="flex flex-col gap-5 px-10 lg:px-20 mb-10">
+        <div
+          class="flex flex-col gap-3 lg:gap-5 px-5 lg:px-20 mb-10 lg:py-10 hover:bg-slate-200"
+        >
           <p class="uppercase text-[#555555]">University</p>
-          <h2 class="font-medium text-3xl flex gap-20 items-center">
+          <h2 class="font-medium text-2xl lg:text-4xl flex gap-20 items-center">
             University of Notre Dame wins award for excellence in campus
             internationalization
             <i
-              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
+              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0 hover:opacity-100"
             ></i>
           </h2>
         </div>
       </div>
-      <div class="flex flex-col gap-20">
-        <div class="flex flex-col gap-5 px-10">
+      <div class="flex flex-col lg:gap-20 gap-10">
+        <div
+          class="flex flex-col gap-3 lg:gap-5 px-5 hover:bg-slate-200 lg:py-10 lg:w-[90%]"
+        >
           <p class="uppercase text-[#555555]">Colleges and Schools</p>
-          <h2 class="font-medium text-3xl flex gap-10">
-            Physicist Laura Fields granted a Presidential Early Career Award
+          <div class="flex gap-10 items-center">
+            <h2 class="font-medium text-2xl lg:text-3xl">
+              Physicist Laura Fields granted a Presidential Early Career Award
+            </h2>
             <i
-              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
+              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0 hover:opacity-100"
             ></i>
-          </h2>
+          </div>
         </div>
-        <div class="flex flex-col gap-5 px-10">
+        <div
+          class="flex flex-col gap-3 lg:gap-5 px-5 hover:bg-slate-200 lg:py-10 lg:w-[90%]"
+        >
           <p class="uppercase text-[#555555]">Global</p>
-          <h2 class="font-medium text-3xl flex gap-10">
+          <h2 class="font-medium text-2xl lg:text-3xl flex gap-10 items-center">
             University of Notre Dame and Pontificia Universidad Católica de
             Chile dual PhD program welcomes all disciplines
             <i
-              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
+              class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0 hover:opacity-100"
             ></i>
           </h2>
         </div>
@@ -138,78 +169,84 @@
     </div>
     <!-- The opportunity inquiry -->
     <div class="bg-[#0C2340] relative flex flex-col gap-10 mb-20">
-      <div class="flex flex-col lg:flex-row gap-10 w-[90%]">
+      <div class="flex flex-col lg:flex-row gap-10 lg:w-[90%]">
         <img
           src="assets/pic1.png"
           alt="img"
-          class="w-[700px] relative lg:top-[-20px]"
+          class="lg:w-[700px] w-full relative lg:top-[-20px]"
         />
-        <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
-            <p class="uppercase text-white">University</p>
-            <h2 class="text-white text-[44px] font-bold">
+        <div class="flex flex-col gap-5 self-center relative px-5">
+          <div class="flex flex-col lg:px-5 gap-3">
+            <p class="uppercase text-white">Research</p>
+            <h2 class="text-white text-2xl lg:text-[44px] font-bold">
               The Opportunity of Inquiry
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
-          <p class="text-white w-[650px] px-5">
+          <div class="w-14 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
+          <p class="text-white lg:w-[650px] lg:px-5">
             For scholars who share a common passion for inquiry because of what
             it can reveal about our world and ourselves, there is opportunity
             here.
           </p>
           <a
             href="#"
-            class="text-xl flex lg:self-end text-white p-5 items-center"
+            class="lg:text-xl flex self-end text-white px-5 py-3 items-center gap-2 hover:bg-sky-500/20 hover:rounded-lg"
             >Research at ND
             <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
           ></a>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row-reverse lg:self-end gap-14 w-[90%]">
-        <img src="assets/Pc2.png" alt="img" class="w-[700px] relative" />
-        <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
-            <p class="uppercase text-white">University</p>
-            <h2 class="text-white text-[44px] font-bold">
+      <div
+        class="flex flex-col lg:flex-row-reverse lg:self-end gap-14 lg:w-[90%]"
+      >
+        <img
+          src="assets/Pc2.png"
+          alt="img"
+          class="w-full lg:w-[700px] relative"
+        />
+        <div class="flex flex-col gap-5 self-center px-5">
+          <div class="flex flex-col lg:px-5 gap-3">
+            <p class="uppercase text-white">Faith & Service</p>
+            <h2 class="text-white text-2xl lg:text-[44px] font-bold">
               The Demands of Justice
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
-          <p class="text-white w-[650px] px-5">
+          <div class="w-14 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
+          <p class="text-white lg:w-[650px] lg:px-5">
             For scholars who share a common passion for inquiry because of what
             it can reveal about our world and ourselves, there is opportunity
             here.
           </p>
           <a
             href="#"
-            class="text-xl flex lg:self-end text-white p-5 items-center"
+            class="lg:text-xl flex self-end text-white px-5 py-3 items-center gap-2 hover:bg-sky-500/20 hover:rounded-lg"
             >Research at ND
             <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
           ></a>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row gap-14 w-[90%]">
+      <div class="flex flex-col lg:flex-row gap-14 lg:w-[90%]">
         <img
           src="assets/Pc3.png"
           alt="img"
-          class="w-[700px] relative lg:bottom-[-20px]"
+          class="w-full lg:w-[700px] relative lg:bottom-[-20px]"
         />
-        <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
-            <p class="uppercase text-white">University</p>
-            <h2 class="text-white text-[44px] font-bold">
+        <div class="flex flex-col gap-5 self-center px-5">
+          <div class="flex flex-col lg:px-5 gap-3">
+            <p class="uppercase text-white">Global</p>
+            <h2 class="text-white text-2xl lg:text-[44px] font-bold">
               The Connected World
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
-          <p class="text-white w-[650px] px-5">
+          <div class="w-14 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
+          <p class="text-white lg:w-[650px] lg:px-5">
             For scholars who share a common passion for inquiry because of what
             it can reveal about our world and ourselves, there is opportunity
             here.
           </p>
           <a
             href="#"
-            class="text-xl flex lg:self-end text-white p-5 items-center gap-2"
+            class="lg:text-xl flex lg:self-end text-white px-5 py-3 items-center gap-2 hover:bg-sky-500/20 hover:rounded-lg"
             >Research at ND
             <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
           ></a>
@@ -217,39 +254,39 @@
       </div>
     </div>
     <!-- At work -->
-    <div class="flex flex-col px-5 lg:px-20 gap-20">
+    <div class="flex flex-col px-5 lg:px-20 lg:gap-20 gap-10">
       <div class="flex flex-col lg:flex-row lg:justify-between">
         <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
+          <div class="flex flex-col lg:px-5 gap-3">
             <p class="uppercase text-[#555555]">University News</p>
-            <h2 class="text-[#0C2340] text-[44px] font-bold">
+            <h2 class="text-[#0C2340] text-3xl lg:text-[44px] font-bold">
               Notre Dame At Work
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
+          <div class="w-14 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
         </div>
         <a
           href="#"
-          class="flex lg:self-end text-[#0C2340] p-5 items-center gap-2"
+          class="flex lg:self-end text-[#0C2340] px-5 py-3 items-center hover:bg-slate-300/20 hover:rounded-lg gap-2 relative left-5"
           >view all news
           <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
         ></a>
       </div>
-      <div class="flex flex-col lg:flex-row relative">
+      <div class="flex flex-col lg:flex-row relative gap-3">
         <img
           src="https://news.nd.edu/assets/604955/800x/globering_2025.jpg"
           alt="img"
           class="lg:z-10"
         />
         <div
-          class="flex gap-5 px-10 lg:bg-slate-100 lg:py-10 lg:absolute lg:w-[70%] lg:h-[80%] lg:top-[-30px] lg:justify-end lg:right-0"
+          class="flex gap-5 px-3 lg:px-10 lg:bg-slate-100 lg:py-10 lg:absolute lg:w-[70%] lg:h-[80%] lg:top-[-30px] lg:justify-end lg:right-0"
         >
           <div
-            class="flex flex-col relative lg:right-0 lg:w-[500px] lg:px-20 gap-5"
+            class="flex flex-col relative lg:right-0 lg:w-[500px] lg:px-20 lg:gap-5 gap-3"
           >
             <p class="uppercase text-[#555555]">International</p>
             <h2
-              class="font-medium text-3xl flex gap-20 items-center lg:w-[450px]"
+              class="font-medium text-xl lg:text-3xl flex gap-20 items-center lg:w-[450px]"
             >
               University of Notre Dame wins award for excellence in campus
               internationalization
@@ -259,23 +296,25 @@
             </h2>
             <a
               href="#"
-              class="flex lg:self-end text-[#0C2340] p-5 items-center gap-2"
+              class="hidden lg:flex lg:self-end text-[#0C2340] px-5 py-3 items-center hover:bg-slate-300/20 hover:rounded-lg gap-2"
               >Read Article
               <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
             ></a>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-10 lg:flex-row-reverse">
-        <div class="flex flex-col gap-5 lg:flex-row lg:items-start">
+      <div class="flex flex-col lg:gap-10 lg:flex-row-reverse">
+        <div class="flex flex-col lg:gap-5 gap-3 lg:flex-row lg:items-start">
           <img
             src="https://news.nd.edu/assets/604183/800x/mc_mcob_banner.jpg"
             alt="img"
             class="lg:w-[40%]"
           />
-          <div class="flex flex-col gap-5 px-10 lg:px-5 mb-10 py-5">
+          <div class="flex flex-col gap-5 px-5 lg:px-5 mb-10 py-5">
             <p class="uppercase text-[#555555]">Latest News</p>
-            <h2 class="font-medium text-2xl flex gap-20 items-center">
+            <h2
+              class="font-medium text-xl lg:text-2xl flex gap-20 items-center"
+            >
               ND Ethics Week explores business and sustainability
               <i
                 class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
@@ -283,10 +322,12 @@
             </h2>
           </div>
         </div>
-        <div class="flex flex-col gap-5 lg:w-[50%]">
-          <div class="flex flex-col gap-5 px-5 py-5">
+        <div class="flex flex-col lg:gap-5 gap-3 lg:w-[50%]">
+          <div class="flex flex-col gap-5 px-5 py-5 hover:bg-slate-100">
             <p class="uppercase text-[#555555]">Community News</p>
-            <h2 class="font-medium text-2xl flex gap-10">
+            <h2
+              class="font-medium text-xl lg:text-2xl flex gap-10 items-center"
+            >
               Notre Dame partners with community organizations for Walk the Walk
               Week service project
               <i
@@ -294,9 +335,11 @@
               ></i>
             </h2>
           </div>
-          <div class="flex flex-col gap-5 px-5 py-5">
-            <p class="uppercase text-[#555555]">Global</p>
-            <h2 class="font-medium text-2xl flex gap-10">
+          <div class="flex flex-col gap-5 px-5 py-5 hover:bg-slate-100">
+            <p class="uppercase text-[#555555]">Faculty and Staff</p>
+            <h2
+              class="font-medium text-xl lg:text-2xl flex gap-10 items-center"
+            >
               Physicist Laura Fields granted a Presidential Early Career Award
               <i
                 class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
@@ -307,34 +350,36 @@
       </div>
     </div>
     <!-- In focus -->
-    <div class="flex flex-col gap-10 lg:p-20 p-5 relative">
+    <div class="flex flex-col gap-10 lg:p-20 py-5 relative">
       <div class="flex flex-col lg:flex-row lg:justify-between">
-        <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
+        <div class="flex flex-col gap-3 lg:gap-5 self-center">
+          <div class="flex flex-col lg:px-5 gap-3">
             <p class="uppercase text-[#555555]">University Stories</p>
-            <h2 class="text-[#0C2340] text-[44px] font-bold">
+            <h2 class="text-[#0C2340] text-3xl lg:text-[44px] font-bold">
               Notre Dame In Focus
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
+          <div class="w-14 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
         </div>
         <a
           href="#"
-          class="flex lg:self-end text-[#0C2340] p-5 items-center gap-2"
+          class="flex lg:self-end text-[#0C2340] px-5 py-3 items-center hover:bg-slate-300/20 hover:rounded-lg gap-2 ml-10"
           >view all news
           <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
         ></a>
       </div>
-      <div class="flex flex-col gap-5 lg:flex-row">
-        <div class="flex flex-col gap-3">
+      <div class="flex flex-col gap-3 lg:gap-5 lg:flex-row">
+        <div class="flex flex-col gap-3 hover:bg-slate-100">
           <img
             src="https://www.nd.edu/stories/images/2025/2025-sampoorna-800.webp"
             alt="img"
             class="h-[50%]"
           />
-          <div class="flex flex-col gap-5 p-5">
+          <div class="flex flex-col gap-3 lg:gap-5 p-5">
             <p class="uppercase text-[#555555]">Colleges and Schools</p>
-            <h2 class="font-medium text-3xl flex gap-10">
+            <h2
+              class="font-medium text-2xl lg:text-3xl flex gap-10 items-center"
+            >
               Empower through Education
               <i
                 class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
@@ -345,15 +390,17 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 hover:bg-slate-100">
           <img
             src="https://www.nd.edu/stories/images/2025/2025-habitat-800.jpg"
             alt="img"
             class="h-[50%]"
           />
-          <div class="flex flex-col gap-5 p-5">
+          <div class="flex flex-col gap-3 lg:gap-5 p-5">
             <p class="uppercase text-[#555555]">Colleges and Schools</p>
-            <h2 class="font-medium text-3xl flex gap-10">
+            <h2
+              class="font-medium text-2xl lg:text-3xl flex gap-10 items-center"
+            >
               Habitat partnership bears fruit for homebuyers in South Bend
               <i
                 class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
@@ -361,15 +408,17 @@
             </h2>
           </div>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 hover:bg-slate-100">
           <img
             src="assets/2024-reasons-to-serve-800.webp"
             alt="img"
             class="h-[50%]"
           />
-          <div class="flex flex-col gap-5 p-5">
+          <div class="flex flex-col gap-3 lg:gap-5 p-5">
             <p class="uppercase text-[#555555]">Colleges and Schools</p>
-            <h2 class="font-medium text-3xl flex gap-10">
+            <h2
+              class="font-medium text-2xl lg:text-3xl flex gap-10 items-center"
+            >
               Reasons to serve
               <i
                 class="fa-solid fa-chevron-right text-[#AE9142] lg:hidden lg:opacity-0"
@@ -410,30 +459,30 @@
     <!-- In Motion -->
     <div class="flex flex-col lg:p-20 px-5 lg:gap-10">
       <div class="flex flex-col lg:flex-row lg:justify-between">
-        <div class="flex flex-col gap-5 self-center">
-          <div class="flex flex-col px-5 gap-3">
-            <p class="uppercase text-[#555555]">University Events</p>
-            <h2 class="text-[#0C2340] text-[44px] font-bold">
+        <div class="flex flex-col gap-2 lg:gap-5 self-center">
+          <div class="flex flex-col lg:px-5 gap-3">
+            <p class="uppercase text-[#555555] text-sm">University Events</p>
+            <h2 class="text-[#0C2340] text-3xl lg:text-[44px] font-bold">
               Notre Dame In Motion
             </h2>
           </div>
-          <div class="w-20 h-2 bg-[#AE9142]"></div>
+          <div class="w-10 lg:w-20 h-1 lg:h-2 bg-[#AE9142]"></div>
         </div>
         <a
           href="#"
-          class="flex lg:self-end text-[#0C2340] p-5 items-center gap-2"
+          class="flex lg:self-end text-[#0C2340] px-5 py-3 items-center hover:bg-slate-300/20 hover:rounded-lg gap-2 relative left-5"
           >view all Events
           <i class="fa-solid fa-chevron-right text-[#AE9142] text-sm"></i
         ></a>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
-        <div class="flex gap-5 items-centers">
+        <div class="flex gap-5">
           <div class="flex flex-col">
             <p class="uppercase text-xl text-center text-[#555555]">Feb</p>
             <p class="font-bold lg:text-5xl text-3xl">28</p>
           </div>
-          <div class="flex flex-col gap-3 p-5">
-            <p class="text-2xl font-medium">
+          <div class="flex flex-col gap-3 p-5 mt-[-20px] hover:bg-slate-100">
+            <p class="text-xl lg:text-2xl font-medium">
               Ten Years Hence Lecture: "A Brief History of the Future"
             </p>
             <p class="flex gap-2 text-[#555555] items-center">
@@ -442,13 +491,13 @@
             </p>
           </div>
         </div>
-        <div class="flex gap-5 items-centers">
+        <div class="flex gap-5">
           <div class="flex flex-col">
             <p class="uppercase text-xl text-center text-[#555555]">Mar</p>
             <p class="font-bold lg:text-5xl text-3xl">8</p>
           </div>
-          <div class="flex flex-col gap-3 p-5">
-            <p class="text-2xl font-medium">
+          <div class="flex flex-col gap-3 p-5 mt-[-20px] hover:bg-slate-100">
+            <p class="text-xl lg:text-2xl font-medium">
               Spring Break (no classes in session)
             </p>
             <p class="flex gap-2 text-[#555555] items-center">
@@ -456,13 +505,13 @@
             </p>
           </div>
         </div>
-        <div class="flex gap-5 items-centers">
+        <div class="flex gap-5">
           <div class="flex flex-col">
             <p class="uppercase text-xl text-center text-[#555555]">Mar</p>
             <p class="font-bold lg:text-5xl text-3xl">19</p>
           </div>
-          <div class="flex flex-col gap-3 p-5">
-            <p class="text-2xl font-medium">
+          <div class="flex flex-col gap-3 p-5 mt-[-20px] hover:bg-slate-100">
+            <p class="text-xl lg:text-2xl font-medium">
               Lecture by Doug Marsh: "Reflections on Building the University of
               Notre Dame Campus"
             </p>
@@ -472,13 +521,13 @@
             </p>
           </div>
         </div>
-        <div class="flex gap-5 items-centers">
+        <div class="flex gap-5">
           <div class="flex flex-col">
             <p class="uppercase text-xl text-center text-[#555555]">Mar</p>
             <p class="font-bold lg:text-5xl text-3xl">20</p>
           </div>
-          <div class="flex flex-col gap-3 p-5">
-            <p class="text-2xl font-medium">
+          <div class="flex flex-col gap-3 p-5 mt-[-20px] hover:bg-slate-100">
+            <p class="text-xl lg:text-2xl font-medium">
               The 26th Annual Dialogues on Nonviolence, Religion, and Peace
               featuring The Honorable Emilce Cuda
             </p>
